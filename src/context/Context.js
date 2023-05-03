@@ -12,7 +12,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
       inStock: 0,
       fastDelivery: false,
-      ratings: 3.9,
+      ratings: 3,
     },
     {
       id: "2",
@@ -21,7 +21,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
       inStock: 3,
       fastDelivery: false,
-      ratings: 4.1,
+      ratings: 4,
     },
     {
       id: "3",
@@ -84,7 +84,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
       inStock: 2,
       fastDelivery: true,
-      ratings: 2,
+      ratings: 3,
     },
     {
       id: "10",
@@ -100,9 +100,9 @@ const Context = ({ children }) => {
       name: "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
       price: "2000.00",
       image: "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
-      inStock: 0,
+      inStock: 8,
       fastDelivery: false,
-      ratings: 2,
+      ratings: 4,
     },
     {
       id: "12",
@@ -111,7 +111,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
       inStock: 3,
       fastDelivery: false,
-      ratings: 2,
+      ratings: 5,
     },
     {
       id: "13",
@@ -120,7 +120,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
       inStock: 3,
       fastDelivery: false,
-      ratings: 2,
+      ratings: 4,
     },
     {
       id: "14",
@@ -129,7 +129,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
       inStock: 3,
       fastDelivery: false,
-      ratings: 2,
+      ratings: 5,
     },
     {
       id: "15",
@@ -138,7 +138,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
       inStock: 3,
       fastDelivery: false,
-      ratings: 2,
+      ratings: 4,
     },
     {
       id: "16",
@@ -165,7 +165,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
       inStock: 3,
       fastDelivery: false,
-      ratings: 2,
+      ratings: 5,
     },
     {
       id: "19",
@@ -183,7 +183,7 @@ const Context = ({ children }) => {
       image: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
       inStock: 3,
       fastDelivery: false,
-      ratings: 2,
+      ratings: 3,
     },
   ];
 
@@ -195,7 +195,7 @@ const Context = ({ children }) => {
   const [productState, productDispatch] = useReducer(productReducer, {
     byStock: false,
     byFastDelivery: false,
-    byRaing: 0,
+    byRating: 0,
     searchQuery: "",
   });
 

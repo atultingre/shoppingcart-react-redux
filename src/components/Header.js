@@ -44,18 +44,20 @@ const Header = () => {
           </Navbar.Text>
         )}
         <Nav>
-          <Dropdown alignRight>
+          <Dropdown >
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge>{cart.length}</Badge>
             </Dropdown.Toggle>
 
-            <Dropdown.Menu className="dropdown-cart" style={{ minWidth: 370, margin: "0 -288px"}}>
+            <Dropdown.Menu
+              className="dropdown-cart"
+              style={{ minWidth: 370, margin: "0 -288px" }}>
               {cart.length > 0 ? (
                 <>
                   {cart.map((prod) => (
                     <span className="cartitem" key={prod.id}>
-                      <img 
+                      <img
                         src={prod.image}
                         className="cartItemImg"
                         alt={prod.name}
